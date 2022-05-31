@@ -9,7 +9,7 @@ const UserContext = React.createContext()
 const UserProvider = ({ children }) => {
   const [users, setUsers] = useState([])
   const [filterd, SetFilterd] = useState([])
-  const [loading, setLodaing] = useState(true)
+  const [loading, setLodaing] = useState(false)
   useEffect(() => {
     const getUser = async () => {
       setLodaing(true)
